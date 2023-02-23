@@ -10,4 +10,4 @@ const healthcareDevicesSchema = new mongoose.Schema({
 })
 
 const HealthcareDevices = mongoose.model("healthcareDevices",healthcareDevicesSchema)
-module.exports= HealthcareDevices
+module.exports= {HealthcareDevices}

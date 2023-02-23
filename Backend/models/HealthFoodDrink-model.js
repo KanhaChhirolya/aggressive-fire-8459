@@ -10,4 +10,4 @@ const healthFooddrinkSchema = new mongoose.Schema({
 })
 
 const HealthFooddrink = mongoose.model("healthFooddrink",healthFooddrinkSchema)
-module.exports= HealthFooddrink
+module.exports= {HealthFooddrink}

@@ -1,12 +1,24 @@
 const express=require("express")
 const {connection}=require("./configs/db")
 const {authenticate}=require("./middleware/authenticate.js")
+
 const {userRouter}=require("./routes/user.routes")
+const {covid_Router} = require("./routes/covid.model")
+const {HealthcareDevices_Router} = require("./routes/Healthcare_Devices_data")
+const {Healthcaredata_Router} = require("./routes/Healthcaredata")
+const {HealthFooddrink_Router} = require("./routes/HealthFooddrink")
+const {Skincare_Router} = require("./routes/Skincare")
+
 const app=express();
 require("dotenv").config();
 app.use(express.json());
 
 app.use("/user",userRouter)
+app.use("/covid",covid_Router)
+app.use("/HealthcareDevices",HealthcareDevices_Router)
+app.use("/Healthcaredata",Healthcaredata_Router)
+app.use("/HealthFooddrink",HealthFooddrink_Router)
+app.use("/Skincare",Skincare_Router)
 
 
 

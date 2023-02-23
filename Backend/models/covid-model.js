@@ -10,4 +10,4 @@ const covidSchema = new mongoose.Schema({
 })
 
 const Covid = mongoose.model("covid",covidSchema)
-module.exports= Covid
+module.exports= {Covid}

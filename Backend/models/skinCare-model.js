@@ -10,4 +10,4 @@ const skinCareSchema = new mongoose.Schema({
 })
 
 const Skincare = mongoose.model("skincare",skinCareSchema)
-module.exports= Skincare
+module.exports= {Skincare}

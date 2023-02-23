@@ -10,4 +10,4 @@ const healthcaredataSchema = new mongoose.Schema({
 })
 
 const Healthcaredata = mongoose.model("healthcaredata",healthcaredataSchema)
-module.exports= Healthcaredata
+module.exports= {Healthcaredata}
