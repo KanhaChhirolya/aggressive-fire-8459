@@ -55,32 +55,32 @@
 
                 <!-- <div class="input email"> -->
                     <label for="name" class='inputText'>Your name</label>
-                    <input type="text" name="email" class='data' id="name">
+                    <input type="text" name="email" class='data' id="rname">
                 <!-- </div> -->
                 <!-- <div class="input email"> -->
                     <label for="email" class='inputText'>Email or mobile phone number</label>
-                    <input type="email" name="email" class='data' id="email">
+                    <input type="email" name="email" class='data' id="remail">
                 <!-- </div> -->
 
                 <!-- <div class="input password"> -->
                     <!-- <div class="passLabel"> -->
                         <label for="password" class='inputText'>Password</label>
                     <!-- </div> -->
-                    <input type="password" name="password" class='data' id="password"
+                    <input type="password" name="password" class='data' id="rpassword"
                         placeholder="At least 6 charcters">
                 <!-- </div> -->
                 <p class='warn'> <span><i>i</i></span> passwords must be At least 6 characters</p>
 
                 <!-- <div class="input password"> -->
                     <!-- <div class="passLabel"> -->
-                        <label for="password" class='inputText'>Re-enter Password</label>
+                        <label for="City" class='inputText'>City</label>
                     <!-- </div> -->
-                    <input type="password" name="password" class='data' id="reEnterPass">
+                    <input type="text" name="City" class='data' id="rcity">
                 <!-- </div> -->
             </form>
             <div class="btn">
                 <!-- <button type='submit' class='signInBtn createAccBtn' onclick="submit()">Create your account</button> -->
-                <button type='submit' class='signInBtn createAccBtn' onclick="Register()">Create your account</button>
+                <button type='submit' class='signInBtn createAccBtn' id="signupbutton">Create your account</button>
             </div>
 
             <div class="terms">
@@ -94,7 +94,7 @@
 
             <div class="keepSignIn">
                 <label>Already have an account
-                    <a onclick="signinPage()" href="./signin.html">Sign-In</a><i class="fas fa-caret-right"></i>
+                    <a href="./signin.html">Sign-In</a><i class="fas fa-caret-right"></i>
                 </label>
             </div>
         </div>
@@ -113,11 +113,5 @@
 </body>
 
 </html>
-<script src="../scripts/signup.js"></script>
-<!-- <script type="module">
 
-    import navbar from "/scripts/navbar.js";
-    let navbar_div = document.querySelector("#navbaradd")
-    navbar_div.innerHTML = navbar();
-
-</script> -->
+<script src="../Frontened/scripts/signup.js"></script>

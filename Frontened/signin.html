@@ -8,14 +8,13 @@
     <link rel="icon"
       href="https://yt3.ggpht.com/ytc/AKedOLSuSHsPDawY82Xy9OklD3ktnoNxDqq5MhFBdjZ56g=s900-c-k-c0x00ffffff-no-rj"
       type="x-icon">
-    <!-- <link rel="stylesheet" href="../styles/signin.css">
-    <link rel="stylesheet" href="../styles/navbar.css"> -->
+    
     <link rel="stylesheet" href="./styles/signin.css">
-    <!-- <script src="https://kit.fontawesome.com/ea67fa5627.js" crossorigin="anonymous"></script> -->
+    
    
 </head>
 <body>
-    <!-- <div id="navbaradd"></div> -->
+   
     <div id="container">
         
          <header class='errorBox'>
@@ -42,7 +41,7 @@
 
             <div class="input email">
                 <label for="email" class='inputText'>Email or mobile phone number</label>
-                <input type="text" name="email" class='data' id="email">
+                <input type="email" name="email" class='data' id="kemail">
             </div>
 
             <div class="input password">
@@ -50,22 +49,15 @@
                     <label for="password" class='inputText'>Password</label>
                     <label for="forgetPass"><a href="#" class='forgetPass'>Forgot your password?</a></label>
                 </div>
-                <input type="password" name="password" class='data' id="password">
+                <input type="password" name="password" class='data' id="kpassword">
             </div>
 
             <div class="btn">
-                <!-- <button type='submit' class='signInBtn loginBtn' onclick="homePage()">Sign-In</button> -->
-                <button type='submit' class='signInBtn ' onclick="login()">Sign-In</button>
+             
+                <button  class='signInBtn ' id="signbutton">Sign-In</button>
             </div>
 
-            <div class="terms">
-                <p>
-                    <!-- By continuing, you agree to Amazon's  -->
-                    <!-- <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=508088">Conditions of Use</a> -->
-                    and
-                    <!-- <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?ie=UTF8&nodeId=468496">Privacy Notice.</a> -->
-                </p>
-            </div>
+           
 
             <div class="keepSignIn">
                 <input type="checkbox">
@@ -79,7 +71,7 @@
             </div>
 
             <div class="signupPage">
-                <button type='submit'  onclick="signupPage()">Create your PharmEasy account</button>
+                <button type='submit' >Create your PharmEasy account</button>
             </div>
 
         </div>
@@ -95,13 +87,9 @@
             </div>
         </div>
     </footer>
-    <script src="../scripts/signin.js"></script>
+    
+   
 </body>
+<script src="../Frontened/scripts/signin.js"></script>
 </html>
-<script type="module">
 
-    import navbar from "../scripts/navbar.js";
-    let navbar_div = document.querySelector("#navbaradd")
-    navbar_div.innerHTML = navbar();
-
-</script>
