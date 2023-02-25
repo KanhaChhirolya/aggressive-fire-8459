@@ -374,7 +374,7 @@
 
     // ]
 
-    let url = "https://pharmeasy-clone.herokuapp.com/healthcaredata";
+    let url = "http://localhost:8080/HealthFooddrink/";
     async function fetchapi() {
         try {
             let res = await fetch(url)
@@ -398,12 +398,13 @@ function displayhealthcaredataitems(healthcares_data){
 
         let imgdiv = document.createElement("img");
         imgdiv.src = el.image;
+        //console.log(el.image)
 
         let titlediv = document.createElement("p");
         titlediv.textContent = el.title
 
         let discount = document.createElement("p");
-        discount.textContent = el.dis;
+        discount.textContent = el.price;
 
         maindiv.append(imgdiv, titlediv, discount);
         document.querySelector("#container").append(maindiv);

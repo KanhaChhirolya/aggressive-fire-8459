@@ -24,9 +24,15 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     font-size: 18px;
 }
-
-
-
+#container>div img{
+    width: 50%;
+}
+#container>div p:nth-child(1){
+    width:30%;
+}
+#container>div p:nth-child(2){
+    width: 18%;
+}
 
 /* ------------------------------------- */
 
