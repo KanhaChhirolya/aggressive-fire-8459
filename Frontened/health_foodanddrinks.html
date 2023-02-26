@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmEasy</title>
+    <link rel="stylesheet" href="../Frontened/styles/footer.css">
+    <link rel="stylesheet" href="../Frontened/styles/navbar.css">
+    <link rel="icon"
+      href="https://yt3.ggpht.com/ytc/AKedOLSuSHsPDawY82Xy9OklD3ktnoNxDqq5MhFBdjZ56g=s900-c-k-c0x00ffffff-no-rj"
+      type="x-icon">
+    <style>
+        h1 {
+            /* margin-left: 100px; */
+            border-bottom: 1px solid rgba(187, 178, 178, .4);
+        }
+
+        #container {
+            width: 85%;
+            display: grid;
+            grid-template-columns: repeat(3, 250px);
+            grid-template-rows: auto;
+            grid-gap: 30px;
+            justify-content: space-around;
+            margin: auto;
+        }
+
+        #container>div {
+            border: 1px solid gray;
+            text-align: center;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px, 60px 20px 50px;
+            border-radius: 8px;
+        }
+
+        #container img {
+            width: 90%;
+            height: 200px;
+
+        }
+
+        button {
+            width: 100px;
+            height: 35px;
+            padding: 5px 10px;
+            margin-left: 65px;
+            border: 0px;
+            border-radius: 8px;
+            background-color: teal;
+            color: white;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: rgb(13, 241, 13);
+        }
+
+         #name_div{
+            display: flex;
+        }
+        #name_div #cartbutton{
+            margin-left: 860px;
+            position: fixed;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="phrameasynavbar">
+        <header id="nav-head">
+          <div class="navbar">
+            <div class="navbar-top">
+              <div class="navbar-logo">
+                <img src="../Frontened/images/HealthEase.JPG" alt="Pharmeasy logo" />
+              </div>
+              <div class="navbar-search">
+                <div id="search-box">
+                  <select name="pincode" id="city">
+                    <option value="select-city">Select Pincode</option>
+                  </select>
+                  <input class="search-input" type="text" placeholder="Search for Medicine / Healthcare Product @18% off"
+                    style="border-left: 1px solid grey;height: 20px;" />
+                  <i class="fas fa-search" style="color: grey;padding-left:10%;font-size: 22px;"></i>
+                </div>
+              </div>
+            </div>
+            <div class="navbar-menu">
+              <div class="navbar-tab">
+                <div id="tab-nav">
+    
+                  <a href="/Frontened/medicine.html"><button class="tab1" display="_blank">Order Medicines</button></a>
+    
+                  <a href="../Frontened/healthcaredata.html"><button class="tab1">Healthcare Devices</button></a>
+                  <a href="../Frontened/health_foodanddrinks.html"><button class="tab1">Lab Tests</button></a>
+                  <a href="./covid.html"><button class="tab1">Covid</button></a>
+    
+    
+                </div>
+              </div>
+              <div class="navbar-button">
+                <div id="btn-nav">
+                 <a href="/html/offers.html"><button class="tab2">
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg" alt="">
+                  Offers</button></a>
+                 <a href="./signup.html"><button class="tab2">
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" alt="">
+                  Login/ Signup</button></a>
+                  <button class="tab2">
+                    <a href="../Frontened/cart.html" style="text-decoration: none; color: white;"><img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg" alt="">
+                    Cart</button></a>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    
+    <div id="name_div">
+        <h1>Health Food and Drinks</h1>
+        <a href="./cart.html"><button id="cartbutton">Cart</button></a>
+        <button id="hl">High to Low</button>
+        <button id="lh">Low tO High</button>
+    </div>
+
+    <div id="container">
+
+    </div>
+
+    <div id="footer">
+        <div id="upper">
+            <div id="line111">
+                <div class="head">Company</div>
+                <p>About Us</p>
+                <p>Careers</p>
+                <p>Blog</p>
+                <p>Partner with PharmEasy</p>
+                <p>Sell at PharmEasy</p>
+                <div class="head">Our Services</div>
+                <p>Order Medicine</p>
+                <p>Healthcare Products</p>
+                <p>Lab Tests</p>
+            </div>
+            <div id="line222">
+                <div class="head">Featured Categories</div>
+                
+                <p>Healthcare Devices</p>
+                <p>Health Food and Drinks</p>
+                <p>Personal Care</p>
+                <p>Ayurvedic Care</p>
+                <p>Mother and Baby Care</p>
+                <p>Accessories And Wearables</p>
+                <p>Skin Care</p>
+                <p>Diabetic Care</p>
+                <p>Health Condition</p>
+                <p>Sexual Wellness</p>
+                <p>Home Care</p>
+                <p>Fitness & Supplements</p>
+                <p>Elderly Care</p>
+                <p>Surgicals and Dressings</p>
+                <p>Pet Care</p>
+            </div>
+            <div id="line333">
+                <div class="head">Need Help</div>
+                <p>Browse All Medicines</p>
+                <p>Browse All Molecules</p>
+                <p>Browse All Cities & Areas</p>
+                <p>FAQs</p>
+                <div class="head">Policy Info</div>
+                <p>Editorial Policy</p>
+                <p>Privacy Policy</p>
+                <p>Vulnerability Disclosure Policy</p>
+                <p>Terms and Conditions</p>
+                <p>Customer Support Policy</p>
+                <p>Return Policy</p>
+            </div>
+            <div id="line444">
+                <div class="head">FOLLOW US</div>
+                <br>
+                <div id="imgdiv">
+                    <a href="https://www.instagram.com/pharmeasyapp/"><img
+                            src="https://i.pinimg.com/564x/f9/19/9f/f9199f1e12e441cfd84bb3ddd86abd54.jpg" alt=""></a>
+                    <a href="https://www.facebook.com/pharmeasy/"><img
+                            src="https://i.pinimg.com/236x/6b/55/59/6b55599c504b2d0ffa2687e49852b494.jpg" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UCDats_DLX-bGZH3-KGu8JhA"><img
+                            src="https://i.pinimg.com/236x/72/54/c8/7254c85fb7fa59e2de4233616ddf6769.jpg" alt=""></a>
+                    <a href="https://www.twitter.com/pharmeasyapp/"><img
+                            src="https://i.pinimg.com/236x/f1/8e/32/f18e3225528d0dd1e376b6387d7529f1.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div id="lower">
+            <div class="head" id="lowertext">Our Payment Partners</div>
+            <div id="imgline">
+                <div id="lowerimgdiv">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/af0c6812.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/0e010044.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/1066bb1f.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/3a1a533d.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/fbea1701.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/4733a49d.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/b278e536.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/0aca2077.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/44a51ca5.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/d058b00d.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/e9445364.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/6e09c713.svg" alt="">
+                </div>
+                <div id="textline">
+                    <p>© 2023 PharmEasy. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+        </div>
+</body>
+
+</html>
+<script>
+
+   
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/E54755/everherb-aloe-vera-juice-with-pulp-rejuvenates-skin-hair-1-litre-bottle-2-1643882394.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Everherb Aloe Vera Juice With Pulp - Rejuvenates Skin & Hair - 1 Litre Bottle",
+    //         price: "199",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/X86381/beyondarie-wild-litsea-herbal-tea-100-g-tin-2-1641794768.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Beyondarie Wild Litsea Herbal Tea - 100 G Tin",
+    //         price: "419",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/Q22665/upakarma-ayurveda-pure-shilajit-tea-with-12-plus-ayurvedic-herbs-pack-of-20-sachets-2-1641790320.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Upakarma Ayurveda Pure Shilajit Tea With 12 Plus Ayurvedic Herbs -Pack Of 20 Sachets",
+    //         price: "309",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/M93204/beyondarie-wild-white-tea-50-g-tin-2-1641794314.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Beyondarie Wild White Tea - 50 G Tin",
+    //         price: "419",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/C66326/spice-sip-immunity-boosting-herbal-tea-pack-of-6-6-x-12-g-2-1641795171.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Spice Sip Immunity Boosting Herbal Tea - Pack Of 6 (6 X 12 G)",
+    //         price: "189",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/R33375/beyondarie-wild-smoked-tea-20-tea-pyramids50g-2-1641794312.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Beyondarie Wild Smoked Tea - 20 Tea Pyramids(50g)",
+    //         price: "124",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/H77305/herbal-hills-safed-musli-powder-100-gms-powder-2-1644933943.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Herbal Hills Safed Musli Powder - 100 Gms Powder",
+    //         price: "625",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/164721/sugar-free-gold-sweetener-tablets-strip-of-500-2-1643883518.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Sugar Free Gold Sweetener Tablets Strip Of 500",
+    //         price: "242",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/C26201/jus-amazin-creamy-almond-butter-unsweetened-200g-25-protein-vegan-2-1641795448.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Jus Amazin Creamy Almond Butter - Unsweetened (200g) 25% Protein Vegan",
+    //         price: "270",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/169990/threptin-chocolate-nutrition-diskettes-tin-of-275-g-2-1643883520.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Threptin Chocolate Nutrition Diskettes Tin Of 275 G",
+    //         price: "321",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/264323/b-protin-chocolate-nutrition-supplement-bottle-of-500-g-2-1643884078.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "B-Protin Chocolate Nutrition Supplement Bottle Of 500 G",
+    //         price: "341",
+    //     },
+
+    //     {
+    //         image: "https://cdn01.pharmeasy.in/dam/products_otc/E34104/liveasy-foods-healthy-seed-mix-blend-of-6-fibre-rich-healthy-seeds-2-1643883431.jpg?dim=320x320&dpr=1&q=100",
+    //         title: "Liveasy Foods Healthy Seed Mix- Blend Of 6 Fibre Rich Healthy Seeds",
+    //         price: "191",
+    //     },
+
+    // ]
+    let healthfooddrinksfilter;
+    let url = "http://localhost:8080/HealthFooddrink";
+    async function fetchapi() {
+        try {
+            let res = await fetch(url)
+            let Health_food_drink = await res.json();
+            console.log("Health_food_drink:",Health_food_drink)
+            healthfooddrinksfilter = Health_food_drink
+             displayhelathfooditems(Health_food_drink)
+        }
+        catch (err) {
+            console.log("err:", err)
+        }
+    }
+    fetchapi()
+
+
+    mycartarr = JSON.parse(localStorage.getItem("CART")) || [];
+    
+
+    function displayhelathfooditems(Health_food_drink) {
+        document.querySelector("#container").innerHTML = null
+
+        Health_food_drink.map(function (el) {
+
+            let maindiv = document.createElement("div");
+
+            let imgdiv = document.createElement("img");
+            imgdiv.src = el.image;
+
+            let titlediv = document.createElement("p");
+            titlediv.textContent = el.title
+
+            let price = document.createElement("p");
+            price.textContent = `₹ ${el.price}`;
+
+            let btn = document.createElement("button");
+            btn.textContent = "Add Cart";
+            btn.addEventListener("click", function () {
+                addbtn(el)
+            })
+
+
+            maindiv.append(imgdiv, titlediv, price, btn);
+            document.querySelector("#container").append(maindiv);
+
+        })
+
+
+    }
+
+    function addbtn(el) {
+
+        // console.log(el);
+        mycartarr.push(el)
+        localStorage.setItem("CART", JSON.stringify(mycartarr));
+        alert("added in Cart");
+       
+
+    }
+
+    let  hlbtn = document.getElementById("hl")
+ let  lhbtn = document.getElementById("lh")
+
+ hlbtn.addEventListener("click",()=>{
+   let xyz=healthfooddrinksfilter.sort((a,b)=>{
+
+    if (Number(a.price) < Number(b.price)) {
+            return 1;
+          } else if (Number(a.price) > Number(b.price)) {
+            return -1;
+          } else {
+            return 0;
+          }
+
+          
+
+ })
+ displayhelathfooditems(xyz)
+ for(let i=0;i<xyz.length;i++){
+    console.log("hello",xyz[i].price)
+ }
+ })
+
+ lhbtn.addEventListener("click",()=>{
+   let xyz= healthfooddrinksfilter.sort((a,b)=>{
+    if ((a.price) < (b.price)) {
+            return -1;
+          } else if ((a.price) > (b.price)) {
+            return 1;
+          } else {
+            return 0;
+          }
+
+ })
+ displayhelathfooditems(xyz)
+ 
+ for(let i=0;i<xyz.length;i++){
+    console.log("hello",xyz[i].price)
+ }
+
+ })
+
+
+
+
+</script>
