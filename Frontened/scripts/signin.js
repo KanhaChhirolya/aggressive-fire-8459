@@ -10,7 +10,7 @@ signInBtn.addEventListener("click", () => {
 		password:spassword.value
    }
    console.log(obj)
-   fetch("http://localhost:8080/user/login",{
+   fetch("https://outstanding-fish-sundress.cyclic.app/user/login",{
         method:"POST",
         headers:{
             "Content-type":"application/json"

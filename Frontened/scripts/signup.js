@@ -23,7 +23,7 @@ signUpBtn.addEventListener("click", () =>{
 		 city:rcity.value
 	}
 	console.log(obj)
-	fetch("http://localhost:8080/user/register",{
+	fetch("https://outstanding-fish-sundress.cyclic.app/user/register",{
         method:"POST",
         headers:{
             "Content-type":"application/json"
