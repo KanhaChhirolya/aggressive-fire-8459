@@ -18,6 +18,7 @@ app.use(express.json());
 app.use(cors())
 
 app.use("/user",userRouter)
+
 app.use("/covid",covid_Router)
 app.use("/HealthcareDevices",HealthcareDevices_Router)
 app.use("/Healthcaredata",Healthcaredata_Router)
